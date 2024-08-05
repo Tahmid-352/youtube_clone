@@ -8,7 +8,7 @@ import { abbreviateNumber } from "js-abbreviation-number";
 import { fetchDataFromApi } from "../utils/api";
 import { Context } from "../context/contextApi";
 import SuggestionVideoCard from "./SuggestionVideoCard";
-import AdBanner from "./AdBanner";
+
 
 const VideoDetails = () => {
   const [video, setVideo] = useState();
@@ -89,9 +89,7 @@ const VideoDetails = () => {
               </div>
             </div>
           </div>
-          <div className="App">
-            <AdBanner />
-          </div>
+    
         </div>
         <div className="flex flex-col py-6 px-4 overflow-y-auto lg:w-[350px] xl:w-[400px]">
           {relatedVideos?.contents?.map((item, index) => {
